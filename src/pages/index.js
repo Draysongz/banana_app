@@ -23,7 +23,7 @@ export default function Home() {
           bgSize="cover" // Covers the entire box area
           bgPos="center" // Centers the image within the box
           width="auto"
-          height="1200px"
+          height="auto"
           align={"center"}
           justify={"center"}
         >
