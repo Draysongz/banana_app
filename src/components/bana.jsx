@@ -69,13 +69,12 @@ export default function Bana() {
             px={{ base: 5, md: 20 }}
           >
             <Text>
-              <b> #1 - BUY BANANA</b>: Start by using your SOL to purchase
-              bananas.
+              <b> #1 - BUY TONZI</b>: Start by using your SOL to purchase Tonzi.
             </Text>
             <Text>
               <b>#2 - COMPOUND</b>: To maximize your earnings, click on the
-              `&quot`COMPOUND`&quot` button. This action will automatically
-              reinvest your rewards back into BANANA.
+              &ldquo;COMPOUND&rdquo; button. This action will automatically
+              reinvest your rewards back into Tonzi.
             </Text>
             <Text>
               <b>#3 - CLAIM REWARDS</b>: This will transfer your accumulated SOL
@@ -83,8 +82,8 @@ export default function Bana() {
             </Text>
           </Stack>
           <Text textAlign={"center"}>
-            The key to maximizing your rewards lies in the quantity of bananas
-            you hold and how frequently you compound them. The more bananas you
+            The key to maximizing your rewards lies in the quantity of Tonzis
+            you hold and how frequently you compound them. The more Tonzis you
             accumulate and the more often you reinvest your rewards, the greater
             the potential for earning more rewards
           </Text>
@@ -116,8 +115,8 @@ export default function Bana() {
                         <Td isNumeric>0 SOL</Td>
                       </Tr>
                       <Tr justifyContent={"space-between"}>
-                        <Td fontSize="xs">Your Bananas</Td>
-                        <Td isNumeric>0 BANANAS</Td>
+                        <Td fontSize="xs">Your Tonzis</Td>
+                        <Td isNumeric>0 TONZI</Td>
                       </Tr>
                     </Tbody>
                   </Table>
@@ -133,7 +132,7 @@ export default function Bana() {
                   <Text>SOL</Text>
                 </Flex>
 
-                <Button m={2}>BUY BANANA</Button>
+                <Button m={2}>BUY TONZI</Button>
                 <Divider />
                 <TableContainer p={2} borderRadius={"lg"}>
                   <Table variant="simple">
