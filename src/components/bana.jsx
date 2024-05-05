@@ -45,7 +45,13 @@ export default function Bana() {
       >
         <Stack align={"center"}>
           <Button alignSelf={"end"}>SELECT WALLET</Button>
-          <Image src={logo} placeholder="blur" quality={100} sizes="50vw" />
+          <Image
+            src={logo}
+            placeholder="blur"
+            alt="logo"
+            quality={100}
+            sizes="50vw"
+          />
         </Stack>
         <Divider />
         <Stack gap={2}>
@@ -68,8 +74,8 @@ export default function Bana() {
             </Text>
             <Text>
               <b>#2 - COMPOUND</b>: To maximize your earnings, click on the
-              "COMPOUND" button. This action will automatically reinvest your
-              rewards back into BANANA.
+              `&quot`COMPOUND`&quot` button. This action will automatically
+              reinvest your rewards back into BANANA.
             </Text>
             <Text>
               <b>#3 - CLAIM REWARDS</b>: This will transfer your accumulated SOL
@@ -167,24 +173,6 @@ export default function Bana() {
                     Dev Fee...................................................5%
                   </Text>
                 </Stack>
-                {/* <TableContainer p={2} borderRadius={"lg"}>
-                  <Table variant="simple">
-                    <Tbody>
-                      <Tr>
-                        <Td fontSize="xs"></Td>
-                        <Td isNumeric align="center"></Td>
-                      </Tr>
-                      <Tr>
-                        <Td fontSize="xs"></Td>
-                        <Td isNumeric></Td>
-                      </Tr>
-                      <Tr>
-                        <Td fontSize="xs"></Td>
-                        <Td isNumeric></Td>
-                      </Tr>
-                    </Tbody>
-                  </Table>
-                </TableContainer> */}
               </CardBody>
             </Card>
             <Card
