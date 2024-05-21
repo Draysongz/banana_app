@@ -26,8 +26,28 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import logo from "../images/logobanana.png";
-
+import { TonConnectButton } from "@tonconnect/ui-react";
+import { useJettonWallet } from "@/hooks/useJettonWallet";
+import { useEffect } from "react";
+import { useTonClient } from "@/hooks/useTonClient";
+import { useTonConnect } from "@/hooks/useTonConnect";
 export default function Bana() {
+  const {sendStake, getStakedAmount, unstake} = useJettonWallet()
+  const {connected} = useTonConnect()
+  const client = useTonClient()
+
+//   useEffect(()=>{
+// const getStaked = async() =>{
+//       if(client && connected){
+// const stake_balance = (await getStakedAmount()).staked_balance
+
+// console.log("staked balance",stake_balance)
+//     }
+// }
+
+// getStaked()
+    
+//   }, [client])
   return (
     <>
       <Stack
@@ -44,7 +64,7 @@ export default function Bana() {
         p={10}
       >
         <Stack align={"center"}>
-          <Button alignSelf={"end"}>SELECT WALLET</Button>
+          <TonConnectButton />
           <Image
             src={logo}
             placeholder="blur"
@@ -132,7 +152,8 @@ export default function Bana() {
                   <Text>SOL</Text>
                 </Flex>
 
-                <Button m={2}>BUY TONZI</Button>
+                <Button onClick={sendStake} m={2}>BUY TONZI</Button>
+                <Button onClick={unstake} m={2}>Unstake</Button>
                 <Divider />
                 <TableContainer p={2} borderRadius={"lg"}>
                   <Table variant="simple">
