@@ -163,7 +163,7 @@ useEffect(() => {
                           setReferralLink('')
                       setUserId('')
                         }else{
-                        const existingReferralLink = `http://localhost:3000?code=${existingReferralCode}`;
+                        const existingReferralLink = `https://notminer-git-master-brandai.vercel.app/?code=${existingReferralCode}`;
                         setReferralLink(existingReferralLink);
                         setUserId(userDoc.id);
                         }
@@ -261,7 +261,7 @@ useEffect(() => {
                 rewards: 0
             }, {merge: true});
 
-            const newReferralLink = `http://localhost:3000?code=${referralCode}`;
+            const newReferralLink = `https://notminer-git-master-brandai.vercel.app/?code=${referralCode}`;
             setReferralLink(newReferralLink);
             setUserId(userId);
 
