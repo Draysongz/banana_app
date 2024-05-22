@@ -5,6 +5,8 @@ import styles from "@/styles/Home.module.css";
 import { Box, Button, Container, Stack } from "@chakra-ui/react";
 import wp from "../images/backgroundc2b2d891.svg";
 import Bana from "@/components/bana";
+ 
+
 
 const inter = Inter({ subsets: ["latin"] });
 
